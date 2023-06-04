@@ -17,7 +17,7 @@ Route::get('/products/pdf', [ProductController::class, 'generatePdf'])->name('pr
 Route::get('/customers/pdf', [CustomerController::class, 'generatePdf'])->name('customers.pdf');
 Route::get('orders/{order}/receipt', [OrderController::class, 'generateReceipt'])->name('orders.receipt');
 
-Route::get('generate-pdf', [OrderController::class, 'generatePDF'])->name('generate.pdf'); // Updated line
+Route::get('generate-pdf', [OrderController::class, 'generatePDF'])->name('generate.pdf');
 
 Auth::routes();
 
